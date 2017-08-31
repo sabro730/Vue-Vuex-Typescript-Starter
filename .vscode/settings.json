@@ -1,0 +1,15 @@
+{
+  "vsicons.presets.angular": false,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+
+    "**/*.config.js": true,
+    "app.dev.js": true,
+    "app.js": true,
+    "**/*.ctrl.js": true
+  }
+}
