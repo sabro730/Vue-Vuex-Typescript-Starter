@@ -4,6 +4,14 @@ import Component from 'vue-class-component';
 @Component({
 
 })
-export class HomePage extends Vue {
+export default class HomePage extends Vue {
+
+  get count( ) {
+    return this.$store.state.count;
+  }
+
+  add( ) {
+    this.$store.commit('increment');
+  }
 
 }
