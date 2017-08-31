@@ -1,7 +1,6 @@
-<template>
-  <div>
-    <h3>123123123</h3>
-  </div>
+<template lang="pug">
+  .home-page
+    h1 Welcome Home
 </template>
 
 <script lang="ts">
