@@ -23,7 +23,9 @@
     "object-literal-shorthand": false,
     "no-var-requires": false,
     "no-console": [false],
-    "interface-name": [false]
+    "interface-name": [false],
+    "no-reference": false,
+    "interface-over-type-literal": false
   },
   "rulesDirectory": []
 }

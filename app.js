@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./index.d.ts");
+/// <reference path="./index.d.ts" />
 const Koa = require("koa");
 const path = require("path");
 const KoaServer = require("koa-static2");

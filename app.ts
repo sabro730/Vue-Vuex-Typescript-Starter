@@ -1,4 +1,4 @@
-import './index.d.ts';
+/// <reference path="./index.d.ts" />
 import * as Koa from 'koa';
 import * as http from 'http';
 import * as path from 'path';

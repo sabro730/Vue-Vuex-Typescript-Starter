@@ -11,13 +11,10 @@ const app_config_1 = require("./config/app.config");
 const app = new Koa();
 const router = new KoaRouter();
 const compile = webpack(webpack_config_1.default);
-// router.get('/', ( ctx, next ) => {
-//   ctx.body = { a: '11' };
-// });
 app
     .use(proxy({
     host: `http://localhost:${app_config_1.proServerConfig.port}`,
-    match: /^(?!\/static\/)/
+    match: /^(?!\/static\/index\.js|\/static\/vendor\.js|\/\_\_webpack\_hmr)/
 }))
     .use(webpackDevMiddleware(compile, {
     noInfo: true,
