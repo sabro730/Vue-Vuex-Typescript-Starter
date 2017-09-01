@@ -2,7 +2,7 @@
   .home-page
     h1 Welcome Home
     h3 {{ count }}
-    button( @click="add" ) +
+    x-button( type="warn" @click.native="add" ) Add
 </template>
 
 <script lang="ts">

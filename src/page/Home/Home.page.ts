@@ -1,8 +1,13 @@
 import * as Vue from 'vue';
+import { mapState } from 'vuex';
+import { XButton } from 'vux';
 import Component from 'vue-class-component';
 
-@Component({
 
+@Component({
+  components: {
+    XButton
+  }
 })
 export default class HomePage extends Vue {
 
