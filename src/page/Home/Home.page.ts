@@ -1,7 +1,7 @@
 import * as Vue from 'vue';
 import { mapState } from 'vuex';
-import { XButton } from 'vux';
 import Component from 'vue-class-component';
+import XButton from 'vux/src/components/x-button/index.vue';
 
 @Component({
   components: {

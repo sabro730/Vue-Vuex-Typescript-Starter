@@ -66,7 +66,7 @@ const webpackConfig = {
   output: {
     filename: DEBUG ? '[name].js' : '[name].[chunkhash:8].js',
     path: path.join(__dirname, '../static/js'),
-    publicPath: DEBUG ? '/static' : '/static/js/'
+    publicPath: DEBUG ? '/static/' : '/static/js/'
   },
   resolve: {
     extensions: ['.ts', '.js', '.vue'],

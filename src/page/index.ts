@@ -2,7 +2,8 @@ import * as Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import IndexPage from './Index/Index.page.vue';
-import HomePage from './Home/Home.page.vue';
+
+const HomePage = ( ) => System.import('./Home/Home.page.vue').then( n => n.default );
 
 Vue.use( VueRouter );
 

@@ -19,7 +19,7 @@ const compile = webpack( webpackConfig );
 app
   .use( proxy({
     host: `http://localhost:${proServerConfig.port}`,
-    match: /^(?!\/static\/index\.js|\/static\/vendor\.js|\/\_\_webpack\_hmr)/
+    match: /^(?!\/static\/|\/\_\_webpack\_hmr)/
   }))
   .use( webpackDevMiddleware( compile, {
     noInfo: true,
