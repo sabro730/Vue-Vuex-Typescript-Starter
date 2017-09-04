@@ -10,7 +10,7 @@
 
 ### Change in @types
 
-> @types/vuex/types/vue.d.ts line 16
+> @types/vuex/types/vue.d.ts line 10、16
 
 `$store: Store<App.State>`
 
@@ -22,13 +22,17 @@
 
 ` // (type: string, payload?: any, options?: DispatchOptions): Promise<any>;`
 
-`<P extends keyof actionDictionary>(type: P, payload: actionDictionary[ P ], options?: CommitOptions): void;`
+`<P extends keyof App.actionDictionary>(type: P, payload: App.actionDictionary[ P ], options?: CommitOptions): void;`
 
 > @types/vuex/types/indx.d.ts line 46、47
 
 `// (type: string, payload?: any, options?: CommitOptions): void;`
 
-`<P extends keyof mutationDictionary>(type: P, payload: mutationDictionary[ P ], options?: CommitOptions): void;`
+`<P extends keyof App.mutationDictionary>(type: P, payload: App.mutationDictionary[ P ], options?: CommitOptions): void;`
+
+> look index.d.ts 
+
+
 
 
 
