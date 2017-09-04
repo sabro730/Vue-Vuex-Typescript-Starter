@@ -7,29 +7,11 @@ declare var System: {
   import: ( filename: string ) => Promise< any >
 }
 
-
-/** vuex mutation - payload */
-declare interface mutationDictionary {
-
-  cusIncrement: {
-    count: number
-  }
-
-}
-
-declare interface actionDictionary {
-
-  asyncIncrement: mutationDictionary['cusIncrement']
-
-}
-
 declare namespace App {
 
-  /**vuex state */
+  /**vuex root state */
   export interface State {
-
-    count: number
-
+    myModule: modules['myModule']['state'];
   }
 
   /**vuex getter */
@@ -38,9 +20,30 @@ declare namespace App {
     dubbleCount: ( s: State ) => void
 
   }
+
+  /** vuex mutation - payload */
+  export interface mutationDictionary {
+    cusIncrement: {
+      count: number
+    }
+  }
+
+  /** vuex action - payload */
+  export interface actionDictionary {
+    asyncIncrement: mutationDictionary['cusIncrement']
+  }
   
-  
-  
+}
+
+
+
+
+declare interface modules {
+  myModule: {
+    state: {
+      count: number
+    }
+  }
 }
 
 

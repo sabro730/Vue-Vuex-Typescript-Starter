@@ -1,10 +1,11 @@
 import * as Vuex from 'vuex';
 
-type vuexCtx = Vuex.ActionContext<App.State, any>;
+
+type vuexCtx = Vuex.ActionContext< App.State['myModule'], App.State >;
 
 export const asyncIncrement = (
     ctx: vuexCtx,
-    payload: actionDictionary['asyncIncrement']
+    payload: App.actionDictionary['asyncIncrement']
   ) => {
     setTimeout(( ) => {
         ctx.commit( 'cusIncrement', payload );

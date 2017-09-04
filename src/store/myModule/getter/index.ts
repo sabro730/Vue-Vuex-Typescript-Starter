@@ -1,5 +1,5 @@
 
-import { dubbleCount } from './count/count.getter';
+import { dubbleCount } from './count.getter';
 
 export const getters = Object.assign({ }, {
   dubbleCount

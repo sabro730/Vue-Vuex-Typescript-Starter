@@ -11,7 +11,7 @@ import Component from 'vue-class-component';
 export default class HomePage extends Vue {
 
   get count( ) {
-    return this.$store.state.count;
+    return this.$store.state.myModule.count;
   }
 
   get otherCount( ) {
