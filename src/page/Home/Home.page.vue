@@ -1,8 +1,11 @@
 <template lang="pug">
   .home-page
     h1 Welcome Home
-    h3 {{ count }}
+    h3 state count: {{ count }}
+    h3 state getter count: {{ otherCount }}
     x-button( type="warn" @click.native="add" ) Add
+    x-button( type="warn" @click.native="cusAdd" ) Custom Add
+    x-button( type="warn" @click.native="asyncAdd" ) async Add
 </template>
 
 <script lang="ts">

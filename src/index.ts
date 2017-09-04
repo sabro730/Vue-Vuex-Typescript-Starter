@@ -1,8 +1,6 @@
 /// <reference path="./index.d.ts" />
 
 import * as Vue from 'vue';
-import Vuex from 'vuex';
-import VueRouter from 'vue-router';
 
 import { store } from './store';
 import { router } from './page';

@@ -1,5 +1,6 @@
-import { increment } from './count/count.mutation';
+import { increment, cusIncrement } from './count/count.mutation';
 
 export const mutations = Object.assign({ }, {
-  increment
+  increment,
+  cusIncrement
  });
